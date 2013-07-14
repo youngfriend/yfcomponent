@@ -1,0 +1,17 @@
+{
+    "author": "Rocky Lee",
+    "name": "yfcomponent",
+    "description": "generate yf template files",
+    "version": "0.0.8",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "main": "./lib/yfcomponent",
+    "bin": {
+        "yfcomponent": "./bin/component"
+    },
+    "engines": {
+        "node": "*"
+    }
+}

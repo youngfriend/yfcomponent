@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+var util = require('util'),yfcomponent = require('../lib/yfcomponent'),helper = require('../lib/helper');
+var args = process.argv.slice(1),continueFlag = true;
+args[0] = process.cwd();
+args = args.filter(function(arg){
+    var match;
+    if(match = arg.match(/^--?([a-z]*)$/i)){
+        arg = match[1];
+    }else{
+        return arg;
+    }
+    switch(arg){
+        case 'v':
+        case 'version':
+            util.puts("yfcomponent "+helper.version.join('.'));
+            continueFlag = false;
+            break;
+        case 'h':
+        case 'help':
+            helper.printUsg();
+            continueFlag = false;
+    }
+});
+if(!continueFlag){
+    return;
+}
+if(args.length === 3){
+    yfcomponent.createTpl(args);
+}else{
+    util.puts("arguments' num is wrong,'yfcomponent -help' for more info");
+}
