@@ -36,7 +36,7 @@ KISSY.add(function(S, Lang, CBaseEditorView, Attrs, @NAME_CAMELCASE_U@, @NAME_CA
                     }
                 ]
             }
-        }        
+        }
     }, {
         cName: "@CNAME@"
     });

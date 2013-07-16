@@ -3,7 +3,7 @@ KISSY.add(function(S, B) {
     return B.Model.extend({
         defaults: {
             label: "",
-            align: "auto",
+            align: "auto"
         }
     });
 }, {
