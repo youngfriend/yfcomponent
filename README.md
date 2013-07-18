@@ -17,7 +17,7 @@ Once the plugin has been installed,you can use this command to generate template
 yfcomponent EnName CnName
 ```
 
-you can run the example in the directory "test" to see more details with this command:
+You can run the example in the directory "test" to see more details with this command:
 
 ```shell
 node generate.js
