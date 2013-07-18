@@ -1,4 +1,4 @@
-KISSY.add(function(S, Lang, CBaseView, @NAME_CAMELCASE_L@Tpl) {
+KISSY.add(function(S, CBaseView, @NAME_CAMELCASE_L@Tpl) {
     "use strict";
     return CBaseView.extend({
         template: @NAME_CAMELCASE_L@Tpl,
@@ -8,7 +8,6 @@ KISSY.add(function(S, Lang, CBaseView, @NAME_CAMELCASE_L@Tpl) {
     });
 }, {
     requires: [
-        "lang",
         "c/base/CBaseView",
         "./tpl/@NAME@-tpl",
         "./assets/@NAME@.css"

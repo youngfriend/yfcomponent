@@ -1,4 +1,4 @@
-KISSY.add(function(S, Lang, CBaseEditorView, Attrs, @NAME_CAMELCASE_U@, @NAME_CAMELCASE_L@Tpl) {
+KISSY.add(function(S, CBaseEditorView, Attrs, @NAME_CAMELCASE_U@, @NAME_CAMELCASE_L@Tpl) {
     "use strict";
     return CBaseEditorView.extend({
         cPath: "c/@NAME@/",
@@ -42,7 +42,6 @@ KISSY.add(function(S, Lang, CBaseEditorView, Attrs, @NAME_CAMELCASE_U@, @NAME_CA
     });
 }, {
     requires: [
-        "lang",
         "c/base/CBaseEditorView",
         "./Attrs",
         "../",
